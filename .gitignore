@@ -1,2 +1,9 @@
 # Project exclude paths
 /venv/
+/models/
+/credentials.yml
+/tests/
+/events.db
+/events.db-shm
+/events.db-wal
+/rasa.db
