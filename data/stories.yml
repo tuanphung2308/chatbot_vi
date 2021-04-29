@@ -1,0 +1,155 @@
+version: "2.0"
+stories:
+- story: Story from Conversation ID afaf9e6c51654e7a893440ebb58d7c3a
+  steps:
+  - intent: instant_support
+  - action: custom_contact_form
+  - active_loop: custom_contact_form
+  - slot_was_set:
+    - requested_slot: customer_name
+  - slot_was_set:
+    - customer_name: rasa
+  - slot_was_set:
+    - requested_slot: phone_number
+  - slot_was_set:
+    - phone_number: '0918882058'
+  - slot_was_set:
+    - requested_slot: null
+  - active_loop: null
+  - action: add_appointment
+- story: Story from Conversation ID 118557776c7d48e7ba5e9d8ef8b5b300
+  steps:
+  - intent: instant_support
+  - action: custom_contact_form
+  - active_loop: custom_contact_form
+  - slot_was_set:
+    - requested_slot: customer_name
+  - intent: deny
+  - action: custom_contact_form
+  - slot_was_set:
+    - customer_name: tuan
+  - slot_was_set:
+    - requested_slot: phone_number
+  - intent: mood_great
+  - action: custom_contact_form
+  - slot_was_set:
+    - phone_number: null
+  - slot_was_set:
+    - requested_slot: phone_number
+  - intent: deny
+  - action: custom_contact_form
+  - slot_was_set:
+    - phone_number: '0918882089'
+  - slot_was_set:
+    - requested_slot: null
+  - active_loop: null
+  - action: add_appointment
+- story: Story from Conversation ID 5902289fd1554051a24ad12287569b7d
+  steps:
+  - intent: greet
+  - action: utter_ask_customer_request
+  - intent: instant_support
+  - action: custom_contact_form
+  - active_loop: custom_contact_form
+  - slot_was_set:
+    - requested_slot: customer_name
+  - slot_was_set:
+    - customer_name: rasa
+  - slot_was_set:
+    - requested_slot: phone_number
+  - slot_was_set:
+    - phone_number: '0918882058'
+  - slot_was_set:
+    - requested_slot: null
+  - active_loop: null
+  - action: add_appointment
+- story: Story from Conversation ID 5f7815d21b824ac3860282d22063d36a
+  steps:
+  - intent: greet
+  - action: utter_ask_customer_request
+- story: Appointment Check ver 1
+  steps:
+  - intent: customer_check_appointment
+  - action: check_appointment
+- story: Story from Conversation ID a672c4d1e50b49698676a2a04f078f7d
+  steps:
+  - intent: customer_check_appointment
+  - action: check_appointment
+  - action: custom_contact_form
+  - active_loop: custom_contact_form
+  - slot_was_set:
+    - requested_slot: customer_name
+  - intent: greet
+  - action: custom_contact_form
+  - slot_was_set:
+    - customer_name: Khánh
+  - slot_was_set:
+    - requested_slot: phone_number
+  - intent: goodbye
+  - action: custom_contact_form
+  - slot_was_set:
+    - phone_number: '0978627659'
+  - slot_was_set:
+    - requested_slot: null
+  - active_loop: null
+  - action: add_appointment
+  - slot_was_set:
+    - customer_name: null
+  - slot_was_set:
+    - phone_number: null
+- story: Story from Conversation ID 0d754dba0c78474aa2c2c1d79f558cdf
+  steps:
+  - intent: greet
+  - action: utter_ask_customer_request
+  - intent: instant_support
+  - action: custom_contact_form
+  - active_loop: custom_contact_form
+  - slot_was_set:
+    - requested_slot: customer_name
+  - slot_was_set:
+    - customer_name: tuấn
+  - slot_was_set:
+    - requested_slot: phone_number
+  - slot_was_set:
+    - phone_number: '0978627659'
+  - slot_was_set:
+    - requested_slot: null
+  - active_loop: null
+  - action: add_appointment
+  - slot_was_set:
+    - customer_name: null
+  - slot_was_set:
+    - phone_number: null
+  - intent: customer_check_appointment
+  - action: check_appointment
+- story: Story from Conversation ID a254324afb33424aa48f8dfb71aec326
+  steps:
+  - intent: greet
+  - action: utter_ask_customer_request
+  - intent: instant_support
+  - action: custom_contact_form
+  - active_loop: custom_contact_form
+  - slot_was_set:
+    - requested_slot: customer_name
+  - intent: affirm
+  - action: custom_contact_form
+  - slot_was_set:
+    - customer_name: tuấn
+  - slot_was_set:
+    - requested_slot: phone_number
+  - intent: instant_support
+  - action: custom_contact_form
+  - slot_was_set:
+    - phone_number: '0976286579'
+  - slot_was_set:
+    - requested_slot: null
+  - active_loop: null
+  - action: add_appointment
+  - slot_was_set:
+    - customer_name: null
+  - slot_was_set:
+    - phone_number: null
+  - intent: customer_check_appointment
+  - action: check_appointment
+  - intent: goodbye
+  - action: utter_goodbye

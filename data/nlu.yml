@@ -1,0 +1,171 @@
+version: "2.0"
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - xin chào
+    - chào em
+    - chào chị
+    - chào anh
+    - xinchao
+    - chào buổi sáng
+    - chào người đẹp
+    - em ơi cho anh hỏi
+    - bạn ơi cho mình hỏi
+    - em ơi anh cần tư vấn
+    - chào cưng
+    - hello em
+    - hi em
+    - em ơi, cho anh hỏi
+    - bot ơi
+    - cho mình hỏi chút
+    - hi người đẹp
+    - hello người đẹp
+    - bonjour
+    - bé ơi
+- intent: goodbye
+  examples: |
+    - good afternoon
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+    - tạm biệt
+    - không có gì cả
+    - anh xong rồi
+    - anh không cần gì cả
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+    - có
+    - đúng rồi
+    - đúng vậy
+    - uh
+    - chuẩn rồi em
+    - chuẩn
+    - chính vậy
+    - đúng nó
+    - chính xác
+    - chín xác
+    - okie em
+    - uhm
+    - oke babe
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+    - vincent
+    - vincent-mcvincent
+    - không
+    - đéo
+    - không bao giờ
+    - chưa
+    - méo
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+    - em là ai?
+    - em có phải người không?
+    - anh đang nói chuyện với ai?
+    - anh đang nc vs ai?
+    - em là bot ha?
+    - em là cái gì vậy?
+    - chị là ai?
+    - em tên gì nhỉ
+    - em tên là gì nhỉ
+    - em tên gì nhỉ ^^
+- intent: instant_support
+  examples: |
+    - instant support now!
+    - i need help
+    - help plz
+    - help please
+    - i need support
+    - anh cần trợ giúp ngay
+    - chị cần hỗ trợ ngay
+    - liên lạc với anh ngay lập tức
+    - anh cần tư vấn
+    - bên em tư vấn anh nhé
+    - anh muốn để lại thông tin
+    - anh cần tư vấn ngay lập tức
+    - anh muốn tư vấn đầu tư đất quận 7
+- intent: customer_check_appointment
+  examples: |
+    - anh muốn kiểm tra lịch gọi
+    - bao giờ bên em gọi anh nhỉ
+    - chị vẫn chưa thấy bạn nào tư vấn cả
+    - sao không ai liên lạc với chú
+    - sao bên em chưa gọi cho anh
+    - sao mãi anh chưa thấy điện thoại nhỉ?
+    - sao anh chưa thấy bên e liên lạc
+- lookup: names
+  examples: |
+    - james
+    - john
+    - robert
+    - michael
+    - william
+    - mary
+    - david
+    - richard
+    - joseph
+- intent: check_market
+  examples: |
+    - tình hình thị trường thế nào hả bot
+    - cập nhật bds hiện tại
+    - tình hình bds ngày hôm nay
+- intent: check_bank_interest

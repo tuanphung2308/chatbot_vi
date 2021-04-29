@@ -1,0 +1,68 @@
+version: '2.0'
+config:
+  store_entities_as_slots: true
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- greet:
+    use_entities: true
+- deny:
+    use_entities: true
+- goodbye:
+    use_entities: true
+- affirm:
+    use_entities: true
+- mood_great:
+    use_entities: true
+- mood_unhappy:
+    use_entities: true
+- bot_challenge:
+    use_entities: true
+- instant_support:
+    use_entities: true
+- customer_check_appointment:
+    use_entities: true
+entities:
+- test
+slots:
+  customer_name:
+    type: rasa.shared.core.slots.TextSlot
+    initial_value: null
+    auto_fill: true
+    influence_conversation: true
+  phone_number:
+    type: rasa.shared.core.slots.TextSlot
+    initial_value: null
+    auto_fill: true
+    influence_conversation: true
+  requested_slot:
+    type: rasa.shared.core.slots.UnfeaturizedSlot
+    initial_value: null
+    auto_fill: true
+    influence_conversation: false
+responses:
+  utter_goodbye:
+  - text: Em cảm ơn anh/ chị đã liên lạc ạ. Em sẽ cố gắng liên lạc lại trong thời gian sớm nhất. Để được hỗ trợ ngay lập tức, anh chị có thể liên lạc vào số điện thoại XXXXXXXXXXXXXXX.
+  utter_iamabot:
+  - text: Em là trợ lý ảo của Ai4Biz ^^.
+  utter_ask_customer_request:
+  - text: Chào anh/ chị. Em có thể giúp đỡ gì cho anh chị ạ?
+  utter_ask_customer_name:
+  - text: Anh/chị vui lòng cho em xin tên ạ.
+  utter_ask_phone_number:
+  - text: Anh/chị vui lòng cho em xin số điện thoại ạ.
+  utter_contact_submit:
+  - text: Ok. Thanks!
+actions:
+- validate_custom_contact_form
+- action_reset_slot
+- add_appointment
+- check_appointment
+forms:
+  custom_contact_form:
+    customer_name:
+    - type: from_text
+    phone_number:
+    - type: from_text
+e2e_actions: []
