@@ -1,0 +1,11 @@
+version: "2.0"
+nlu:
+- intent: customer_check_appointment
+  examples: |
+    - anh muốn kiểm tra lịch gọi
+    - bao giờ bên em gọi anh nhỉ
+    - chị vẫn chưa thấy bạn nào tư vấn cả
+    - sao không ai liên lạc với chú
+    - sao bên em chưa gọi cho anh
+    - sao mãi anh chưa thấy điện thoại nhỉ?
+    - sao anh chưa thấy bên e liên lạc

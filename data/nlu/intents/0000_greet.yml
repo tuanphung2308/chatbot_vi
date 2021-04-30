@@ -1,0 +1,35 @@
+version: "2.0"
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - xin chào
+    - chào em
+    - chào chị
+    - chào anh
+    - xinchao
+    - chào buổi sáng
+    - chào người đẹp
+    - em ơi cho anh hỏi
+    - bạn ơi cho mình hỏi
+    - em ơi anh cần tư vấn
+    - chào cưng
+    - hello em
+    - hi em
+    - em ơi, cho anh hỏi
+    - bot ơi
+    - cho mình hỏi chút
+    - hi người đẹp
+    - hello người đẹp
+    - chào cả nhà. em có việc này mong cả nhà tư vấn giúp
+    - kính chào các a chị trong nhóm
+    - chào mọi người
+    - chào các Ad
+    - dạ em chào mọi người trong group ạ
+    - chào A/C An Cư
+    - em xin chào tất cả các ace trong group
+    - xin chào mọi người trong group ạ
+    - em xin phép Admin và mọi người trong group ạ

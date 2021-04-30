@@ -1,0 +1,17 @@
+version: "2.0"
+nlu:
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+    - vincent
+    - vincent-mcvincent
+    - không
+    - đéo
+    - không bao giờ
+    - chưa

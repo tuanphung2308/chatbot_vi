@@ -1,0 +1,18 @@
+version: "2.0"
+nlu:
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+    - em là ai?
+    - em có phải người không?
+    - anh đang nói chuyện với ai?
+    - anh đang nc vs ai?
+    - em là bot ha?
+    - em là cái gì vậy?
+    - chị là ai?
+    - em tên gì nhỉ
+    - em tên là gì nhỉ
+    - em tên gì nhỉ ^^
