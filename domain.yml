@@ -23,8 +23,14 @@ intents:
     use_entities: true
 - customer_check_appointment:
     use_entities: true
+- give_phone_number:
+    use_entities: true
+- bank_interest_check:
+    use_entities: true
 entities:
 - test
+- mobile_number
+- banks
 slots:
   customer_name:
     type: rasa.shared.core.slots.TextSlot

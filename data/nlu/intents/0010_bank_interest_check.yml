@@ -1,0 +1,7 @@
+version: "2.0"
+nlu:
+- intent: bank_interest_check
+  examples: |
+    - lãi suất của ngân hàng [vib](banks) là nhiêu hả e?
+    - lãi suất cho vay của [vib](banks) bao nhiu 1 năm?
+    - hàng năm phải trả [vib](banks) bao nhiêu %?

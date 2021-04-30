@@ -1,0 +1,9 @@
+version: "2.0"
+nlu:
+- intent: give_phone_number
+  examples: |
+    - số của anh là [0918882058](mobile_number)
+    - số anh là [0918882058](mobile_number)
+    - dt anh là [0918882058](mobile_number)
+    - di động chị là [0918882058](mobile_number)
+    - [0918882058](mobile_number) là số của anh
