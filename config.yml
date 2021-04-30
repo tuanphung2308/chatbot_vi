@@ -1,9 +1,17 @@
 language: en
 
 pipeline:
-  - name: WhitespaceTokenizer
-#  - name: entity_extractor.EntityExtractor
+  - name: VietnameseTokenizer
+  #  - name: entity_extractor.EntityExtractor
+  #  - name: EntitySynonymMapper
+  - name: LanguageModelFeaturizer
+    # Name of the language model to use
+    model_name: "roberta"
+    # Pre-Trained weights to be loaded
+    model_weights: "vinai/phobert-base"
+    cache_dir: null
   - name: RegexFeaturizer
+  - name: RegexEntityExtractor
   - name: LexicalSyntacticFeaturizer
   - name: CountVectorsFeaturizer
   - name: CountVectorsFeaturizer
@@ -11,7 +19,7 @@ pipeline:
     min_ngram: 1
     max_ngram: 4
   - name: DIETClassifier
-    epochs: 100
+    epochs: 150
 
 policies:
   - name: MemoizationPolicy

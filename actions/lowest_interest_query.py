@@ -11,7 +11,9 @@ class LowestBankInterestQuery(Action):
     def run(self, dispatcher, tracker, domain):
         with open('banking_interest.csv') as csv_file:
             csv_reader = csv.reader(csv_file, delimiter=',')
-            min_row = csv_reader[0]
+            for row in csv_reader:
+                min_row = row
+                break
 
             for row in csv_reader:
                 if row[2] < min_row[2]:

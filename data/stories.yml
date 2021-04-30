@@ -157,6 +157,9 @@ stories:
 - story: Story from Conversation ID 6490a9ac05c641b5a82af0912ef531d8
   steps:
   - intent: bank_interest_check
-    entities:
-    - banks: vib
   - action: check_bank_interest
+
+- story: Story from Conversation ID Lowest Interest
+  steps:
+  - intent: lowest_bank_interest
+  - action: lowest_interest_query

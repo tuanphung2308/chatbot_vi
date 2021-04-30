@@ -28,6 +28,8 @@ nlu:
     - chao be
     - xin chao
     - chao nguoi dep
+    - hello baby
+    - hellow
 - intent: goodbye
   examples: |
     - good afternoon
@@ -151,6 +153,8 @@ nlu:
     - anh muon ti`m hieu dich vu cua FINA
     - anh cần mua đất q5
     - anh cần tư vấn bds q7
+    - tư vấn của  người ạ
+    - tư vấn của mọi người ạ
 - intent: customer_check_appointment
   examples: |
     - anh muốn kiểm tra lịch gọi

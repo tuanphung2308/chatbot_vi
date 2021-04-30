@@ -1,0 +1,10 @@
+version: "2.0"
+nlu:
+  - synonym: lãi suất
+    examples: |
+      - lãi suât
+      - lai suat
+      - lai suất
+      - lai xuat
+      - lãi xuất
+      - lai xuất
