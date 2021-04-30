@@ -1,0 +1,4 @@
+nlu:
+- regex: account_number
+  examples: |
+    - \d{10,12}
