@@ -24,6 +24,10 @@ nlu:
     - cho mình hỏi chút
     - hi người đẹp
     - hello người đẹp
+    - Chào cả nhà. Em có việc này mong cả nhà tư vấn giúp
+    - chao be
+    - xin chao
+    - chao nguoi dep
 - intent: goodbye
   examples: |
     - good afternoon
@@ -41,6 +45,9 @@ nlu:
     - không có gì cả
     - anh xong rồi
     - anh không cần gì cả
+    - cám ơn em
+    - okie baby
+    - bye em
 - intent: affirm
   examples: |
     - yes
@@ -74,6 +81,7 @@ nlu:
     - đéo
     - không bao giờ
     - chưa
+    - nothing
 - intent: mood_great
   examples: |
     - perfect
@@ -122,6 +130,7 @@ nlu:
     - em tên gì nhỉ
     - em tên là gì nhỉ
     - em tên gì nhỉ ^^
+    - em có phải bot ko
 - intent: instant_support
   examples: |
     - instant support now!
@@ -139,6 +148,9 @@ nlu:
     - anh muốn tư vấn đầu tư đất quận 7
     - anh muon dau tu bat dong san
     - anh muon ti`m mua nha chung cu
+    - anh muon ti`m hieu dich vu cua FINA
+    - anh cần mua đất q5
+    - anh cần tư vấn bds q7
 - intent: customer_check_appointment
   examples: |
     - anh muốn kiểm tra lịch gọi
@@ -148,6 +160,8 @@ nlu:
     - sao bên em chưa gọi cho anh
     - sao mãi anh chưa thấy điện thoại nhỉ?
     - sao anh chưa thấy bên e liên lạc
+    - sao e chưa gọi nhỉ
+    - sao bên em vẫn chưa gọi cho anh nhỉ
 - lookup: names
   examples: |
     - james
