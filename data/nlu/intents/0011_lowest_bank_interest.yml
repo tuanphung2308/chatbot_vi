@@ -1,0 +1,8 @@
+version: "2.0"
+nlu:
+- intent: lowest_bank_interest
+  examples: |
+    - lãi suất của ngân hàng thấp nhất hả e?
+    - lãi suất thấp nhất để vay mua nhà là nhiêu?
+    - cho anh lãi suất vay tốt nhất?
+    - ngân hàng nào hỗ trợ cho vay được nhất?

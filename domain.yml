@@ -27,6 +27,8 @@ intents:
     use_entities: true
 - bank_interest_check:
     use_entities: true
+- lowest_bank_interest:
+    use_entities: true
 entities:
 - test
 - mobile_number
@@ -65,6 +67,8 @@ actions:
 - action_reset_slot
 - add_appointment
 - check_appointment
+- check_bank_interest
+- lowest_interest_query
 forms:
   custom_contact_form:
     customer_name:
